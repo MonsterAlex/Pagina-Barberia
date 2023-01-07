@@ -1,0 +1,394 @@
+body
+{
+    font-family: 'Montserrat', sans-serif;
+}
+header
+{
+    background: #BBBBBB;
+    padding: 20px 0; /*arriba y abajo, los bordes*/
+}
+
+.caja
+{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav
+{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li
+{
+    display: inline;
+    margin: 0 0 0 15px;/*les da un espacio entre texto: arriba, derecha, abajo, izquierda*/
+}
+
+nav a
+{
+    text-transform: uppercase; /*Hace que el texto se vuelva en mayusculas*/
+    color: #000000;
+    font-weight: bold; /*Transfroma el texto a negrito*/
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover /*Asi indicamos que se va a hacer cuando el cursor este sobre la etiqueta*/
+{
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+.productos
+{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li
+{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /*para deci que el limite del espacio ya definido en el whidth*/
+    border: 2px solid #000000; /*una forma mas simple de definir los bordes*/
+    border-radius: 10px;
+ 
+    /*border-bottom-left-radius: 5px; asi se define el borde inferior izquierdo*/
+    /*border-color: #000000;
+    border-width: 2px;
+    border-style: solid;
+    border-top-width: 10px; asi puedo definir el ancho superior el borde*/
+}
+
+.productos li:hover
+{
+    border-color: #C78C19;
+}
+
+.productos li:active /*Asi podermos dar efectos cuando se de click sobre el elemento mencionado*/
+{
+    border-color: #088c19;
+}
+
+.productos h2
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2 /*Para lograr hacer que cambie el texto cuando se posicione sobre el elemento*/
+{
+    font-size: 33px;
+}
+
+.producto-descripcion
+{
+    font-size: 18px;
+}
+
+.producto-precio
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer
+{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyright
+{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+
+/*****************Estilos de contacto*****************/
+.contacto
+{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form
+{
+    margin: 40px 0; /*40 para arriba y abajo y 0 para los lados*/
+}
+
+form label, form legend /*asi puedo lograr darle los mismoas atributos a otro elemento, haciendo que reutilice lo que ya defini*/
+{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px; /*0 para arriba o para los lados y 10 para abajo*/
+}
+
+.input-padron 
+{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox
+{
+    margin: 20px 0;
+}
+
+.enviar
+{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all; /*el all hace que se aplique para todo, se puede escribir backgroun para solo afectar el fondo*/
+    cursor: pointer;
+}
+
+.enviar:hover
+{
+    background: darkorange;
+    transform: scale(1.20);
+}
+
+table
+{
+    margin: 40px 40px;
+}
+
+thead
+{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+th, td
+{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+/*****************Estilos para el home*****************/
+
+.banner
+{
+    width: 100%;
+}
+
+.principal
+{
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px; /*por lo general siempre se usa esa medida para centrar algo*/
+    margin: 0 auto; /*0 ariba y abajo, auto para los lados*/
+}
+
+.titulo-principal
+{
+    text-align: center;
+    font-size: 2em; /*que sea X veces el tamaño por defecto de la fuente del navegador*/
+    margin: 0  0 1em;
+    clear: left; /*asi limpio cualquier propiedad que venga de la izquierda como por ejemplo la de imagenes de utensilios*/
+    
+    /*color: rgb(0, 0, 0, 0.3);  0.3 es para darle una opacidad*/
+}
+
+/*
+.titulo-principal:first-letter /*asi logramos modificar la primera letra
+{
+    font-weight: bold;
+}
+
+.titulo-principal:before /*afectamos antes del contenido
+{
+    content: "[";
+}
+
+.titulo-principal:after /*afectamos al final del contenido
+{
+    content: "]";
+}
+*/
+
+p:first-line /*asi logramos modificar la primera linea el parrafo*/
+{
+    font-style: italic;
+}
+
+.principal p
+{
+    margin: 0 0 1em;
+}
+
+.principal strong
+{
+    font-weight: bold;
+}
+
+.principal em
+{
+    font-style: italic;
+}
+
+.utensilios
+{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa
+{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE,#888888); /*Forma de poner trancision de colores, si antes del primer color se coloca 45deg, es el angulo de coloracion ademas si despues del color ponemos 50% es el tamaño totla que se va a colorear*/
+}
+
+.mapa p
+{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido
+{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales
+{
+    padding: 3em 0;
+    background: #888888;
+}
+
+.contenido-diferenciales
+{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales
+{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items
+{
+    line-height: 1.5; /*asi logras hacer que las cosas tengan un espacio entre ellas*/
+}
+
+.items:before
+{
+    content: "★";
+}
+
+.items:first-child /*pseudo clase para indicar que el primer elemento del bloque de items y con nth-child() indicamos que numero de elemento, si denro de parentesis pongo 2n se afectara los pares*/
+{
+    font-weight: bold;
+}
+
+.imagen-diferenciales
+{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 10px #000000; /*se puede poner -10px para que el lugar cambie, el tercero es para el difuminado, el cuarto es para la expancion*/
+}
+
+.imagen-diferenciales:hover
+{
+    opacity: 0.3;
+}
+
+.video
+{
+    width: 560px;
+    margin: 1em auto;
+}
+
+/*sirve para permitir trabajar con excepciones o condiciones para lo responsivo*/
+
+@media screen and (max-width:912px) 
+{  
+    /**********General**********/
+    h1, nav
+    {
+        text-align: center;
+    }
+    
+    /**********Index**********/
+    nav
+    {
+        position: static;
+    }
+
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video
+    {
+        width: auto;
+    }
+
+    .lista-diferenciales, .imagen-diferenciales
+    {
+        width: 100%;
+    }
+
+    /**********Productos**********/
+
+    main .productos
+    {
+        width: auto;
+    }
+
+    .productos li
+    {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /**********Productos**********/
+    .contacto, .enviar
+    {
+        width: auto;
+    }
+
+    .contacto form, fieldset
+    {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 15px auto;
+    }
+
+    .checkbox input
+    {
+        text-align: center;
+        margin: 15px 0 10px 10px;
+    }
+
+    table
+    {
+        margin: 15px auto;
+        border-collapse: collapse;
+    }
+}

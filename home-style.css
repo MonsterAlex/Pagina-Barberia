@@ -1,0 +1,59 @@
+.tituloPrincipal
+{
+    padding-left: 30px;
+}
+
+#banner /* el # es para los id */
+{
+    width: 100%;
+}
+
+.principal /* el punto es para las class */
+{
+    background: #CCCCCC;
+    padding: 20px;
+}
+
+.tituloCentralizado
+{
+    text-align: center;
+}
+
+p
+{
+    text-align: center;
+}
+
+#mision
+{
+    font-size: 20px;
+}
+
+em strong
+{
+    color: red;
+}
+
+.diferenciales
+{
+    background: #ffffff;
+    padding: 30px;
+}
+
+ul
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.items
+{
+    font-style: italic;
+}
+
+.imagenDiferenciales
+{
+    width: 50%;
+}
